@@ -19,6 +19,53 @@
     <link rel="stylesheet" href="assets/css/dark-style.css">
 
     <title>Modi Chest Clinic</title>
+
+    
+
+    <style>
+        .i1 {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.main-div {
+    height: 100%;
+    width: 100%;
+    max-width: 660px;
+    margin: 0 auto; /* Center the div on larger screens */
+}
+
+.second-div {
+    display: flex;
+    align-items: center;
+    width: 100%; /* Use full width of the parent container */
+    width: 500px; /* Limit width on larger screens */
+    margin: 0 auto; /* Center the div on larger screens */
+}
+
+.first-sub-div,
+.second-sub-div {
+    margin: 5px;
+    padding: 5px;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.first-sub-div {
+    margin-bottom: 5px;
+}
+
+/* Media query for screens smaller than 600px */
+@media only screen and (max-width: 600px) {
+    .second-div {
+        flex-direction: column; /* Stack flex items vertically on smaller screens */
+        align-items: stretch; /* Stretch items to full width on smaller screens */
+    }
+}
+
+    </style>
 </head>
 
 <body data-bs-spy="scroll" data-bs-offset="70">
@@ -33,14 +80,7 @@
             <div class="rect5"></div>
         </div>
     </div>
-    <!-- End Preloader Area -->
-    <!-- Dark Version Btn -->
-    <div class="dark-version-btn">
-        <label id="switch" class="switch">
-                <input type="checkbox" onchange="toggleTheme()" id="slider">
-                <span class="slider round"></span>
-            </label>
-    </div>
+   
 
     <!-- Start Navbar Area -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -48,40 +88,237 @@
             <div class="row">
                 <div class="col-12 col-lg-2 col-md-3">
                     <a class="navbar-brand" href="index.html">
-                            <img src="assets/img/logo1 png.png" alt="logo">
-                        </a>
+                        <img src="assets/img/logo1 png.png" alt="logo">
+                    </a>
                 </div>
-
+    
                 <div class="col-12 col-lg-8 col-md-6">
                     <div class="navbar-toggle-btn">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
                     </div>
-
+    
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mx-auto">
                             <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                            <!-- <li class="nav-item"><a class="nav-link" href="#department">Department</a></li> -->
-                            <li class="nav-item"><a class="nav-link" href="#service">Service</a></li>
-                            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#blog">Speciality</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#price">Price</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                        </ul>
+                            <!-- <li class="nav-item"><a class="nav-link" href="#about">About</a></li>  -->
+
+
+     <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">About</a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li class="nav-item"><a class="nav-link" href="aboutclinic.html">About Clinic</a></li>
+            <li class="nav-item"><a class="nav-link" href="aboutdoctor.html">About Doctor</a></li>
+          
+        </ul>
+    </li>
+
+
+
+                                         <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                         aria-haspopup="true" aria-expanded="false">Services</a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        
+
+                                        <div class="main-div">
+                                            <div class="second-div">
+
+
+                                                <div class="first-sub-div">
+                                                    <li class="nav-item"><a class="nav-link" href="allservices.html">
+                                            <img src="./Photos/2024-01/Digital x ray.jpg" alt="icon" class="i1">
+                                            Digital X Ray</a></li>
+
+                                        <li class="nav-item"><a class="nav-link" href="allservices.html">
+                                            <img src="./Photos/2024-01/12 channel ecg.jpg" alt="icon" class="i1">
+                                            12 Channel ECG</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="allservices.html">
+                                            <img src="./Photos/2024-01/Laboratory.jpg" alt="icon" class="i1">
+                                            Labortary</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="allservices.html">
+                                            <img src="./Photos/2024-01/Spirometery.jpg" alt="icon" class="i1">
+                                            Spirometer/PFT</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="allservices.html">
+                                            <img src="./Photos/2024-01/FeNO test for Asthma.jpg" alt="icon" class="i1">
+                                            FeNO Test For Asthama</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="allservices.html">
+                                            <img src="./Photos/2024-01/Fibroscan for liver.jpg" alt="icon" class="i1">
+                                            Fibroscan For Liver</a></li>
+
+                                            
+
+                                                </div>
+
+                                                <div class="second-sub-div">
+                                                    <li class="nav-item"><a class="nav-link" href="allservices.html">
+                                                        <img src="./Photos/2024-01/Skin allergy test.jpg" alt="icon" class="i1">
+                                                        Skin Allergy Test</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="allservices.html">
+                                            <img src="./Photos/2024-01/Blood allergy test.jpg" alt="icon" class="i1">Blood Allergy Test</a></li>
+
+                                        <li class="nav-item"><a class="nav-link" href="allservices.html">
+                                            <img src="./Photos/2024-01/Sleep study.jpg" alt="icon" class="i1">Sleep Study</a></li>
+
+                                        <li class="nav-item"><a class="nav-link" href="allservices.html">
+                                            <img src="./Photos/2024-01/FOT impulse oscillometery.jpg" alt="icon" class="i1">FOT/Impulse Oscillometer</a></li>
+
+                                        <li class="nav-item"><a class="nav-link" href="allservices.html">
+                                            <img src="./Photos/2024-01/Flexible bronoschopy.jpg" alt="icon" class="i1">Flexible Bronchoscopy</a></li>
+
+                                        <li class="nav-item"><a class="nav-link" href="allservices.html">
+                                            <img src="./Photos/2024-01/ILD.jpg" alt="icon" class="i1">Inside Pharamacy</a></li>
+
+                                            <!-- <li class="nav-item"><a class="nav-link" href="#department-submenu2">
+                                                <img src="./Photos/2024-01/Day care center.jpg" alt="icon" class="i1">
+                                                Day Care Centre</a></li> -->
+                                        
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        
+                                        
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">Special Clinic</a>
+
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <!-- new -->
+
+
+                                        <div class="main-div">
+                                            <div class="second-div">
+
+
+                                                <div class="first-sub-div">
+                                                    <li class="nav-item"><a class="nav-link" href="special.html">
+                                                        <img src="./Photos/2024-01/Asthma.jpg" alt="icon" class="i1">
+                                                        Asthma</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="special.html">
+                                            <img src="./Photos/2024-01/Childhood Cough.jpg" alt="icon" class="i1">
+                                            chronic Cough</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="special.html">
+                                            <img src="./Photos/2024-01/COPD.jpg" alt="icon" class="i1">
+                                            COPD</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="special.html">
+                                            <img src="./Photos/2024-01/ILD.jpg" alt="icon" class="i1">
+                                            ILD</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="special.html">
+                                            <img src="./Photos/2024-01/Tuberculosis.jpg" alt="icon" class="i1">
+                                            Tuberculosis</a></li>
+
+                                            <li class="nav-item"><a class="nav-link" href="special.html">
+                                                <img src="./Photos/2024-01/Day care center.jpg" alt="icon" class="i1">
+                                                Day Care Centre</a></li>
+                                            
+
+                                                </div>
+
+                                                <div class="second-sub-div">
+                                                    <li class="nav-item"><a class="nav-link" href="special.html">
+                                                         <img src="./Photos/2024-01/Pneumonia.jpg" alt="icon" class="i1">
+                                                         Pneumonia</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="special.html">
+                                             <img src="./Photos/2024-01/Bronchitis.jpg" alt="icon" class="i1">
+                                             Bronchitis</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="special.html">
+                                             <img src="assets/img/BAL.jpg" alt="icon" class="i1">
+                                             Bal Sample </a></li>
+                                        <li class="nav-item"><a class="nav-link" href="special.html">
+                                             <img src="./Photos/2024-01/Snoring clinic.jpg" alt="icon" class="i1">
+                                             Snoring Clinic</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="special.html">
+                                             <img src="assets/img/PLEURAL THORACO- CENTESIS.jpg" alt="icon" class="i1">
+                                             Pleural Thorraco-Centesis</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="special.html">
+                                             <img src="./Photos/2024-01/Obstructive sleep apnea.jpg" alt="icon" class="i1">
+                                             OSA (Obstructive Sleep Aponea)</a></li>
+
+                                            
+                                        
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="healthpackage.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">Health Package</a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li class="nav-item"><a class="nav-link" href="healthpackage.html">General Health Package </a></li>
+                                        <!-- <li class="nav-item"><a class="nav-link" href="#department-submenu2">Allergy Panel</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="youtube.html">Snoring Package</a></li> -->
+                                    </ul> 
+                                </li>
+
+                            <!-- <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li> -->
+
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">Gallery</a>
+    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <!-- <li class="nav-item"><a class="nav-link" href="award.html">Awards</a></li> -->
+        <li class="nav-item"><a class="nav-link" href="newspaper.html">Newspaper</a></li>
+        <li class="nav-item"><a class="nav-link" href="youtube.html">Youtube</a></li>
+        <!-- <li class="nav-item"><a class="nav-link" href="">Amenities</a></li> -->
+    </ul>
+</li>
+
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">Contact</a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <h6>call us:</h6>
+                                                <li><a href="tel:92176-43274">92176-43274</a></li>
+                                                <li><a href="tel:98158-52811">98158-52811</a></li>
+                                                <li><a href="tel:0181-2250601">0181-2250601</a></li>
+                                                <h6>mail us:</h6>
+                                                <li><a href="mailto:support@modichestclinic.com">support@modichestclinic.com</a></li>
+                                                <!-- <li><a href="mailto:[email&#160;protected]">[email&#160;protected]</a></li> -->
+                                                <li><a href=" https://maps.app.goo.gl/13kndEVhozUmRj198 ">Map</a></li>
+                                                <li class="nav-item"><a class="nav-link" href="appointment.html">Appointment</a></li>
+                                            </ul>
+                                            <!-- <li class="nav-item"><a class="nav-link" href="#department-submenu1">Phone</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="#department-submenu1">Whatsapp</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="#department-submenu2">Email</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="aboutteam.html">Google Map</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="aboutteam.html">360 view</a></li>
+                                        </ul> -->
+
+                        <!-- </ul> -->
                     </div>
                 </div>
-
+    
                 <div class="col-12 col-lg-2 col-md-3 text-right">
-                    <a href="#appointment" class="appointment-btn">Appointment</a>
+                    <a href="appointment.html" class="appointment-btn">Appointment</a>
                 </div>
             </div>
         </div>
     </nav>
+
+
+   
     <!-- End Navbar Area -->
 
     <!-- Start Main Banner Area -->
+    <!-- social media -->
+    <div class="social-icons">
+        <a href="https://www.facebook.com/profile.php?id=61552509261998&mibextid=ZbWKwL" class="facebook"><i class="icofont-facebook"></i></a>
+        <a href="https://x.com/Deepakmodi_73?s=20" class="twitter"><i class="icofont-twitter"></i></a>
+        <a href="https://www.instagram.com/modi.chestclinic?igsh=ZDBmY3ozZnk4MzFt" class="instagram"><i class="icofont-instagram"></i></a>
+        <div class="go-top" style="height: 50px; width: 50px;color: aliceblue; "><a href="https://wa.me/9815852811" target="_blank" class="whatsapp-icon" style="width: 100%; height: 100%;">
+            <i class="icofont-whatsapp" style="color: #53f547;" ></i><i class="fa-brands fa-whatsapp" style="color: #53f547;"></i>
+        </a><p style="margin-top: -110px; margin-left: -15px;">Online Consultancy</p></div>
+       
+    </div>
+        <!-- Start Main Banner Area -->
     <div id="home" class="main-banner">
         <div class="d-table">
             <div class="d-table-cell">
@@ -98,10 +335,11 @@
             </div>
         </div>
     </div>
+</div>
     <!-- End Main Banner Area -->
 
     <!-- Start Boxes Area -->
-    <section class="boxes-area ptb-100">
+    <!-- <section class="boxes-area ptb-100"> -->
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-6">
@@ -150,7 +388,7 @@
                     <div class="row about-image">
                         <div class="col-6 col-lg-12 col-md-12">
                             <div class="image">
-                                <img src="assets/img/pic.jpg" alt="about">
+                                <img src="assets/img/Doctor Photos png.jpg" alt="about">
                             </div>
                         </div>
                     </div>
@@ -184,107 +422,13 @@
                             <li>Your health is our top priority</li>
                             <li>Affordable medical, health care.</li>
                         </ul>
-                         <a href="aboutteam.html" class="btn">Know More About Our Team</a>
+                         <a href="aboutdoctor.html" class="btn">Know More About Our Team</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- End Why Choose Us Area -->
-
-    <!-- Start Departments Area -->
-
-                            <!-- <div class="tabs_item">
-                                <div class="row align-items-center">
-                                    <div class="col-lg-6 col-md-12">
-                                        <div class="tabs_item_img">
-                                            <img src="assets/img/department-img1.jpg" alt="department">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-6 col-md-12">
-                                        <div class="tabs_item_content">
-                                            <h3>What Is a Nebulizer?</h3>
-                                            <p>A nebulizer changes medication from a liquid to a mist so you can inhale it into your lungs.
-                                            Nebulizers come in home (tabletop) and portable models. Home nebulizers are larger, and you have to plug them into an
-                                            electrical outlet. Portable nebulizers run on batteries, or you can plug them into a car outlet. Some are only a bit
-                                            bigger than a deck of cards, so you can carry them in a bag or briefcase.
-                                            You may need a doctor’s prescription for a nebulizer, or you can get one at your pediatrician’s office. Many people also
-                                            get breathing treatments at their doctor’s office.
-                                            Home nebulizers cost about $50 and up, plus the cost of accessories. Portable nebulizers usually cost a little more.
-                                            Health insurance policies usually cover nebulizers under their durable medical equipment portion. But most insurance
-                                            companies want you to work with a certain supplier. Check with your insurance provider before buying or renting a
-                                            nebulizer. Your health care team should be able to help you.</p>
-                                            <ul>
-                                                <li>
-                                                    <h3>Types of Nebulizers</h3>
-                                                    <p>There are three main types of nebulizers:
-                                                    <br>• Jet. This uses compressed gas to make an aerosol (tiny particles of medication in the air).
-                                                    <br>• Ultrasonic. This makes an aerosol through high-frequency vibrations. The particles are larger than with a jet
-                                                    nebulizer.
-                                                    <br>• Mesh. Liquid passes through a very fine mesh to form the aerosol. This kind of nebulizer puts out the smallest
-                                                    particles. It’s also the most expensive
-
-                                                    </p>
-                                                </li>
-                                                <li>
-                                                    <h3>Why Might You Use a Nebulizer?</h3>
-                                                    <p>Nebulizers are especially good for infants’ or small children’s asthma medications. They’re also helpful when you have
-                                                    trouble using an asthma inhaler or need a large dose of an inhaled medication.</p>
-                                                    Nebulized therapy is often called a breathing treatment. You can use nebulizers with a variety of medications, both for
-                                                    controlling asthma symptoms and for relief right away. These include:
-                                                    <br>• Corticosteroids to fight inflammation (such as budesonide, flunisolide, fluticasone, and triamcinolone)
-                                                    <br>• Bronchodilators to open your airways (such as albuterol, formoterol, levalbuterol, and salmeterol)
-                                                </li>
-                                                <li>
-                                                    <h3>How Do I Care for My Nebulizer?</h3>
-                                                    <p>It’s important to clean and disinfect your asthma nebulizer equipment to prevent infection. Clean it in an area away
-                                                    from smoke, dust, and open windows.
-                                                    Follow these instructions for cleaning your nebulizer:</p>
-                                                    <br>• After each treatment, rinse the nebulizer cup thoroughly with warm water, shake off excess water, and let it air-dry.
-                                                    At the end of each day, wash the cup and mask or mouthpiece in warm water with a mild detergent. Rinse it thoroughly and
-                                                    let it air-dry. You don’t need to clean the compressor tubing.
-                                                    <br>• Every third day, after washing your equipment, disinfect it with either a vinegar/water solution or a disinfectant
-                                                    solution. To make the vinegar solution, mix ½ cup of white vinegar with 1½ cups of water. Soak the equipment for 20
-                                                    minutes and rinse it well under a steady stream of water. Shake off the excess water and let it air-dry on a paper
-                                                    towel. Be sure it’s totally dry before storing it in a zippered plastic bag.
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="tabs_item">
-                                <div class="row align-items-center">
-                                    <div class="col-lg-6 col-md-12">
-                                        <div class="tabs_item_img">
-                                            <img src="assets/img/department-img1.jpg" alt="department">
-                                        </div>
-                                    </div>  -->
-
-                                    <!-- <div class="col-lg-6 col-md-12">
-                                        <div class="tabs_item_content">
-                                            <h3>Welcome to Urology Department</h3>
-                                            <p>This department provides medical care to patients who have problems with their heart or circulation. It treats people on an inpatient and outpatient basis.</p>
-                                            <ul>
-                                                <li>Electrocardiogram (ECG)</li>
-                                                <li>Echocardiograms (ultrasound scan of the heart)</li>
-                                                <li>24-hour blood pressure tests</li>
-                                                <li>Electrocardiogram (ECG)</li>
-                                            </ul>
-                                            <a href="#" class="btn">Appointment Now</a>
-                                        </div>
-                                    </div> -->
-                                <!-- </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- End Departments Area -->
     <!-- Start Services Area -->
     <section id="service" class="services-area bg-f9faff">
         <!-- ptb-100 -->
@@ -299,428 +443,252 @@
             <div class="row">
                 <div class="col-lg-3 col-md-6">
                     <div class="single-services">
-                        <i class="icofont-surgeon"></i>
+                        <!-- <i class="icofont-surgeon"></i> -->
+                        <img src="assets\img\BLOOD ALLERGY TEST.jpg " alt="" class="img-fluid">
                         <h3>Allergy Blood Test</h3>
-                        <p>An allergy blood test measures a substance called immunoglobulin E (IgE) in your blood. IgE is an antibody that your
-                            body makes. If you have allergies, you may have more IgE in your blood than normal.</p>
-                            <a href="allergybloodtest.html" class="btn" >Read More</a>
-                        <!-- <a href="allergybloodtest.html" class="icofont-paper-plane"></a> -->
+                        <p>
+                        A blood allergy test is a
+                        diagnostic method used to identify allergies by measuring the presence of specific immunoglobulin E (IgE) antibodies in
+                        the blood. Blood allergy tests
+                         are particularly useful in cases where skin testing is not feasible or when
+                        a patient cannot stop taking antihistamines.</p>
                     </div>
                 </div>
     
                 <div class="col-lg-3 col-md-6">
                     <div class="single-services">
-                        <i class="icofont-nurse"></i>
-                        <h3>Pulmonary Function</h3>
-                        <p>Pulmonary function tests (PFTs) are lung tests. They show how well your lungs work. They’re noninvasive, which means
-                            that the doctor doesn’t cut you or put any tools inside your body.Testing your lungs can help doctors diagnose lung diseases.</p>
-                        <!-- <a href="Pulmonary.html" class="icofont-paper-plane"></a> -->
-                        <a href="Pulmonary.html" class="btn">Read More</a>
+                        <img src="assets/img/DIGITAL X RAY.jpg" alt="" class="img-fluid">
+                        <h3>Digital X Ray</h3>
+                        <p>Digital X-ray, also known as digital radiography, is a modern medical imaging technique that uses digital sensors
+                        instead of traditional photographic film to capture and create diagnostic images. It has largely replaced conventional
+                        X-ray film technology in many healthcare settings due to its numerous advantages.
+                        </p>
                     </div>
                 </div>
     
                 <div class="col-lg-3 col-md-6">
                     <div class="single-services">
-                        <i class="icofont-herbal"></i>
-                        <h3>Bronchoscopy</h3>
-                        <p>A bronchoscopy is a medical test that lets doctors look into your lungs and airways. The procedure uses a thin tube
-                        with a small camera and light at the end. The doctor inserts it through your nose or mouth.</p>
-                        <!-- <a href="Bronchoscopy.html" class="icofont-paper-plane"></a> -->
-                        <a href="Bronchoscopy.html" class="btn">Read More</a>
+                        <img src="assets/img/12 ECG X ARY.jpg" alt="" class="img-fluid">
+                        <h3>12 Channnel ECG</h3>
+                        <p>A 12-lead electrocardiogram (ECG or EKG) is a diagnostic test that measures the electrical activity of the heart. The
+                        "12 channels" refer to the different views of the heart's electrical activity that the ECG records. Each
+                        lead represents a different viewpoint, providing a comprehensive assessment of the heart's functioning.</p>
                     </div>
                 </div>
     
                 <div class="col-lg-3 col-md-6">
                     <div class="single-services">
-                        <i class="icofont-icu"></i>
-                        <h3>Electrocardiogram</h3>
-                        <p>An EKG test is an easy way to get information to diagnose a problem with your heart. An electrocardiogram test can tell your healthcare provider if you’ve had a heart attack, heart failure or heart damage.</p>
-                        <!-- <a href="Electrocardiogram.html" class="icofont-paper-plane"></a> -->
-                        <a href="Electrocardiogram.html" class="btn">Read More</a>
-                    </div>
+                        <img src="assets/img/Spirometer PFT.jpg" alt="">
+                        <h3>Spirometer/PFT</h3>
+                        <p>Spirometry is a common diagnostic test used to assess lung function. It measures the volume and flow of air that a
+                        person can inhale and exhale. Spirometry is a non- invasive procedure and is typically performed by a healthcare
+                        professional, such as a respiratory therapist or pulmonologist.</p>
                 </div>
             </div>
+            <a href="allservices.html" class="btn-container">
+                <button class="btn">View All</button>
+            </a>
         </div>
     </section>
+    
     <!-- End Services Area -->
 
         <!-- Start News Area -->
-        <section id="blog" class="news-area ptb-100 bg-f9faff">
-            <div class="container">
-                <div class="section-title">
-                    <h3>Special Clinic For</h3>
-                    <span></span>
-                    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua.</p> -->
-                </div>
-        
-                <div class="row">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="single-blog-post">
-                            <a href="Copd.html" class="blog-img"><img src="assets/img/blog-img1.jpg" alt="blog"></a>
-        
-                            <div class="post-content">
-                                <h4><a href="Copd.html">Chronic Obstructive Pulmonary Disease</a>
-                                </h4>
-                                <p>Chronic Obstructive Pulmonary Disease (COPD) is a chronic lung disease that mainly results in an obstructed airflow from
-                                the lungs. It is frequently caused by long-term exposure to various gases or smoking. Patients who have COPD are at a
-                                higher risk of developing heart, lung, and various disorders.</p>
-                                <a href="Copd.html" class="btn">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <div class="col-lg-4 col-md-6">
-                        <div class="single-blog-post">
-                            <a href="lungdisease.html" class="blog-img"><img src="assets/img/blog-img2.jpg" alt="blog"></a>
-        
-                            <div class="post-content">
-                                <h4><a href="lungdisease.html">Interstitial lung disease</a>
-                                </h4>
-                                <p>Interstitial lung disease (ILD) is a term for a group of over 200 conditions that cause inflammation and scarring in
-                                your lungs. ILD damages the tissues between the small air sacs in your lungs (alveoli) and the blood vessels around
-                                them. This makes it harder for you to move oxygen out of your lungs and into your body.</p>
-                                <a href="lungdisease.html" class="btn">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <div class="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
-                        <div class="single-blog-post">
-                            <a href="Tuberculosis.html" class="blog-img"><img src="assets/img/blog-img3.jpg" alt="blog"></a>
-        
-                            <div class="post-content">
-                                <h4><a href="Tuberculosis.html">Tuberculosis (TB)</a>
-                                </h4>
-                                <p>Tuberculosis (TB) is a serious illness that mainly affects the lungs. The germs that cause tuberculosis are a type of
-                                bacteria.
-                                Tuberculosis can spread when a person with the illness coughs, sneezes or sings. This can put tiny droplets with the
-                                germs into the air. Another person can then breathe in the droplets, and the germs enter the lungs.</p>
-                                <a href="Tuberculosis.html" class="btn">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End News Area -->
-        <!-- Start Pricing Area -->
-        <section id="price" class="pricing-area bg-f9faff" style="padding-bottom: 100px;">
+        <section id="service" class="services-area bg-f9faff">
             <!-- ptb-100 -->
             <div class="container">
                 <div class="section-title">
-                    <h3>Our Pricing</h3>
-                    <span>Our Best Price Offer</span>
+                    <h3>Our Speciality</h3>
+                    <!-- <span>Which Services We Provide</span> -->
                     <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua.</p> -->
+                            dolore magna aliqua.</p> -->
                 </div>
         
                 <div class="row">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="pricing-table">
-                            <!-- <div class="pricing-header">
-                                <h3>Blood Test</h3>
-                            </div>
-        
-                            <div class="price">
-                                <span><sup>₹</sup>1700</span>
-                            </div> -->
-        
-                            <div class="pricing-features" style="height: 360px;">
-                                <ul>
-                                    <li>OPD TEST-₹200</li>
-                                    <li>LIVER FUNCTION TEST-₹500</li>
-                                    <li>KIDNEY-₹400</li>
-                                    <li>ESR-₹100</li>
-                                    <li>RBS-₹50</li>
-                                    <li>WIDAZ-₹100</li>
-                                    <li>HBS AG-₹250</li>
-                                    <li>HCV-₹250</li>
-                                    <li>HIV-₹250</li>
-                                    <li>CBC-₹200</li>
-                                    
-                                </ul>
-                            </div>
-        
-                            <div class="pricing-footer">
-                                <a href="#" class="btn">Appointment Now</a>
-                            </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="single-services">
+                            <!-- <i class="icofont-surgeon"></i> -->
+                            <img src="assets/img/Asthma.jpg" alt="" class="img-fluid">
+                            <h3>Asthma</h3>
+                            <p>
+                        
+                        Asthma, marked by narrowed airways, swelling, and excess mucus, results in challenging breathing, coughing, wheezing,
+                        and breathlessness. Triggers encompass allergies (dust, animal fur), medications (ibuprofen, aspirin), and emotions
+                        (stress, laughter). Environmental factors like smoke and pollution also contribute. Effective management involves
+                        identifying and avoiding these triggers, along with appropriate medical intervention for symptom control.</p>
                         </div>
                     </div>
         
-                    <div class="col-lg-4 col-md-6">
-                        <div class="pricing-table">
-                            <!-- <div class="pricing-header">
-                                <h3>Body CT Scan</h3>
-                            </div>
-        
-                            <div class="price">
-                                <span><sup>₹</sup>350</span>
-                            </div> -->
-        
-                            <div class="pricing-features">
-                                <ul>
-                            <li>SpirometerY IPFS-₹500</li>
-                            <li>ALLERGY TEST 80 TEST-₹2500</li>
-                            <li>CHEST X RAY-₹250</li>
-                            <li>ECG-₹200</li>
-                            <li>FeNo Test-₹1000</li>
-                            <li>Fibroscan of liver-₹1000</li>
-                            <li>Sleep Study-₹4000</li>
-                            <li>Allergy Profile-₹4700</li>
-                                                            <li>MX TEST-₹100</li>
-                                                            <li>LIPID PROFILE-₹500</li>
-                                                            <li>COMPLETE HEALTH PACKAGE-₹1700</li>
-                                </ul>
-                            </div>
-        
-                            <div class="pricing-footer">
-                                <a href="#" class="btn">Appointment Now</a>
-                            </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="single-services">
+                            <img src="assets/img/PNEUMONIA.jpg" alt="" class="img-fluid">
+                            <h3>Pneumonia</h3>
+                            <p>Pneumonia treatment varies based on its cause. Antibiotics combat bacterial pneumonia, fluids, and
+                            over-the-counter medications address viral cases, alleviating fever and pain. Essential self-care involves
+                            hydration, and avoiding irritants like air pollution, and chemicals. Tailoring treatment to the infection type
+                            ensures effective recovery, emphasizing a holistic approach that encompasses both medical interventions and lifestyle
+                            adjustments for optimal healing.
+                            </p>
                         </div>
                     </div>
         
-                    <div class="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
-                        <div class="pricing-table">
-                            <!-- <div class="pricing-header">
-                                <h3>Urine Test</h3>
-                            </div>
-        
-                            <div class="price">
-                                <span><sup>₹</sup>125</span>
-                            </div> -->
-        
-                            <div class="pricing-features" style="height: 360px;">
-                                <!-- <ul>
-                                    <li>Cholesterol and lipid tests</li>
-                                    <li>Oestrogen blood test</li>
-                                    <li>Thyroid function tests</li>
-                                    <li>Kidney function tests</li>
-                                    <li>C-reactive protein (CRP) test</li>
-                                    <li>Cholesterol and lipid tests</li>
-                                    <li>Oestrogen blood test</li>
-                                    <li>Thyroid function tests</li>
-                                </ul> -->
-                            </div>
-        
-                            <div class="pricing-footer">
-                                <a href="#" class="btn">Appointment Now</a>
-                            </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="single-services">
+                            <img src="assets/img/BRONCHIECTASIS.jpg" alt="" class="img-fluid">
+                            <h3>Bronchitis</h3>
+                            <p>Bronchiectasis, a chronic respiratory ailment, entails persistent damage and dilation of bronchial tubes, hindering
+                            effective mucus and substance clearance in the lungs. The permanently widened airways lead to difficulty in maintaining
+                            respiratory health, fostering recurrent infections and inflammation. Managing this condition requires a comprehensive
+                            approach to address both symptoms and underlying causes, airway clearance techniques, and
+                            lifestyle adjustments.</p>
                         </div>
                     </div>
+        
+                    <div class="col-lg-3 col-md-6">
+                        <div class="single-services">
+                            <img src="assets/img/copd.jpg" alt="">
+                            <h3>COPD</h3>
+                            <p> (COPD) encompasses chronic bronchitis and emphysema, progressively impeding
+                            breathing. Smoking, the leading cause, is implicated in approximately 9 out of 10 cases. The harmful substances in smoke
+                            damage lung and airway linings, exacerbating the condition. COPD management involves smoking cessation, medications, and
+                            lifestyle adjustments to alleviate symptoms and enhance respiratory function in the face of irreversible lung damage.</p>
+                        </div>
+                    </div>
+                    <a href="special.html" class="btn-container">
+                        <button class="btn">View All</button>
+                    </a>
                 </div>
-            </div>
         </section>
-        <!-- End Pricing Area -->
-
-    <!-- Start Gallery Area -->
-    <!-- <section id="gallery" class="gallery-area ptb-100">
-        <div class="container">
-            <div class="section-title">
-                <h3>Photo Gallery</h3>
-                <span>Which Services We Provide</span> -->
-                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
-            <!-- </div>
-
-            <div class="row">
-                <div class="col-lg-12 col-md-12">
-                    <div class="shorting-menu">
-                        <button class="filter" data-filter="all">All</button>
-                        <button class="filter" data-filter=".cardiology">Cardiology</button>
-                        <button class="filter" data-filter=".neurology">Neurology</button>
-                        <button class="filter" data-filter=".sergury">Sergury</button>
-                        <button class="filter" data-filter=".orthopaedics">Orthopaedics</button>
-                        <button class="filter" data-filter=".urology">Urology</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="shorting">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 mix cardiology">
-                        <div class="single-photo">
-                            <img src="assets/img/gallery-img1.jpg" alt="gallery">
-                            <div class="gallery-content">
-                                <h3>Blood Pressure</h3>
-                                <span>Cardiology</span>
-                                <a href="#" class="link-btn"><i class="icofont-link"></i></a>
-                                <a href="assets/img/gallery-img1.jpg" class="popup-btn"><i class="icofont-expand"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 mix neurology">
-                        <div class="single-photo">
-                            <img src="assets/img/gallery-img2.jpg" alt="gallery">
-                            <div class="gallery-content">
-                                <h3>Blood Pressure</h3>
-                                <span>Cardiology</span>
-                                <a href="#" class="link-btn"><i class="icofont-link"></i></a>
-                                <a href="assets/img/gallery-img2.jpg" class="popup-btn"><i class="icofont-expand"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 mix sergury">
-                        <div class="single-photo">
-                            <img src="assets/img/gallery-img3.jpg" alt="gallery">
-                            <div class="gallery-content">
-                                <h3>Blood Pressure</h3>
-                                <span>Cardiology</span>
-                                <a href="#" class="link-btn"><i class="icofont-link"></i></a>
-                                <a href="assets/img/gallery-img3.jpg" class="popup-btn"><i class="icofont-expand"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 mix orthopaedics">
-                        <div class="single-photo">
-                            <img src="assets/img/gallery-img4.jpg" alt="gallery">
-                            <div class="gallery-content">
-                                <h3>Blood Pressure</h3>
-                                <span>Cardiology</span>
-                                <a href="#" class="link-btn"><i class="icofont-link"></i></a>
-                                <a href="assets/img/gallery-img4.jpg" class="popup-btn"><i class="icofont-expand"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 mix urology">
-                        <div class="single-photo">
-                            <img src="assets/img/gallery-img5.jpg" alt="gallery">
-                            <div class="gallery-content">
-                                <h3>Blood Pressure</h3>
-                                <span>Cardiology</span>
-                                <a href="#" class="link-btn"><i class="icofont-link"></i></a>
-                                <a href="assets/img/gallery-img5.jpg" class="popup-btn"><i class="icofont-expand"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 mix orthopaedics cardiology">
-                        <div class="single-photo">
-                            <img src="assets/img/gallery-img6.jpg" alt="gallery">
-                            <div class="gallery-content">
-                                <h3>Blood Pressure</h3>
-                                <span>Cardiology</span>
-                                <a href="#" class="link-btn"><i class="icofont-link"></i></a>
-                                <a href="assets/img/gallery-img6.jpg" class="popup-btn"><i class="icofont-expand"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- End Gallery Area -->
+        <!-- End News Area -->
     <!-- Start Make an Appointment Area -->
-    <section id="appointment" class="appointment-area ptb-100">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-6">
-                    <div class="section-title">
-                        <h3>Make an Appointment</h3>
-                        <span>Visit Your Primary Care Physician</span>
-                    </div>
     
-                    <div class="faq">
-                        <ul class="accordion">
-                            <!-- <li class="accordion-item">
-                                <a class="accordion-title active" href="javascript:void(0)">What is dental care? <i
-                                        class="icofont-plus"></i></a>
-                                <p class="accordion-content show">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
-                                    suspendisse.</p>
-                            </li>
     
-                            <li class="accordion-item">
-                                <a class="accordion-title" href="javascript:void(0)">What is dental care? <i
-                                        class="icofont-plus"></i></a>
-                                <p class="accordion-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse.</p>
-                            </li> -->
-    
-                            <!-- <li class="accordion-item">
-                                <a class="accordion-title" href="javascript:void(0)">What is dental care? <i
-                                        class="icofont-plus"></i></a>
-                                <p class="accordion-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse.</p>
-                            </li> -->
-                        </ul>
-                    </div>
+<!-- <section id="appointment" class="appointment-area ptb-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6">
+                <div class="section-title">
+                    <h3>Make an Appointment</h3>
+                    <span>Visit Your Primary Care Physician</span>
                 </div>
-    
-                <div class="col-lg-6 col-md-6">
-                    <div class="appointment-form">
-                        <form>
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Name">
-                                    </div>
-                                </div>
-    
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" placeholder="Email">
-                                    </div>
-                                </div>
-    
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Phone Number">
-                                    </div>
-                                </div>
-    
-                                <!-- <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <select class="form-control">
-                                            <option>Department</option>
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-                                            <option>5</option>
-                                        </select>
-                                    </div>
-                                </div>
-    
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <select class="form-control">
-                                            <option>Doctor</option>
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-                                            <option>5</option>
-                                        </select>
-                                    </div>
-                                </div> -->
-    
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <input type="text" id="datepicker" class="form-control" placeholder="Booking Date">
-                                        <span><i class="icofont-calendar"></i></span>
-                                    </div>
-                                </div>
-    
-                                <div class="col-lg-12">
-                                    <div class="form-group">
-                                        <textarea class="form-control" cols="30" rows="4" placeholder="Message"></textarea>
-                                    </div>
-                                </div>
-    
-                                <div class="col-lg-12">
-                                    <button type="submit" class="btn">Book Now</button>
+ <div class="faq">
+                    <ul class="accordion">
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6">
+                <div class="appointment-form">
+                    <form >
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="text" id="name" class="form-control" placeholder="Name">
                                 </div>
                             </div>
-                        </form>
-                    </div>
+
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="email" id="email" class="form-control" placeholder="Email">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="text" id="phone" class="form-control" placeholder="Phone Number">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="text" id="datepicker" class="form-control" placeholder="Booking Date">
+                                    <span><i class="icofont-calendar"></i></span>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <textarea id="message" class="form-control" cols="30" rows="4" placeholder="Message"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <button type="submit" class="btn" onclick="sendEmail(); reset(); return false; ">Book Now</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section> -->
+
+<section id="appointment" class="appointment-area ptb-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6">
+                <div class="section-title">
+                    <h3>Make an Appointment</h3>
+                    <span>Visit Your Primary Care Physician</span>
+                </div>
+                <div class="faq">
+                    <ul class="accordion">
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6">
+                <div class="appointment-form">
+                    <form>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="text" id="name" name="name" class="form-control" placeholder="Name"
+                                        required>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="email" id="email" name="email" class="form-control" placeholder="Email"
+                                        required>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="text" id="phone" name="phone" class="form-control"
+                                        placeholder="Phone Number" required>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="text" id="datepicker" name="booking_date" class="form-control"
+                                        placeholder="Booking Date" required>
+                                    <span><i class="icofont-calendar"></i></span>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <textarea id="message" name="message" class="form-control" cols="30" rows="4"
+                                        placeholder="Message"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <button type="submit" class="btn">Book Now</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
     <!-- End Make an Appointment Area -->
 
     <!-- Start Contact Area -->
@@ -738,8 +706,8 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="contact-box">
                         <h3><i class="icofont-envelope"></i> Email</h3>
-                        <p><a href="#"><span class="__cf_email__" data-cfemail="751c1b131a35111a16011a075b161a18">[email&#160;protected]</span></a></p>
-                        <p><a href="#"><span class="__cf_email__" data-cfemail="b9caccc9c9d6cbcdf9ddd6dacdd6cb97dad6d4">[email&#160;protected]</span></a></p>
+                        <p><a href="mailto:support@modichestclinic.com"><span class="__cf_email__" data-cfemail="751c1b131a35111a16011a075b161a18">support@modichestclinic.com</span></a></p>
+                        <!-- <p><a href="#"><span class="__cf_email__" data-cfemail="b9caccc9c9d6cbcdf9ddd6dacdd6cb97dad6d4">[email&#160;protected]</span></a></p> -->
                     </div>
                 </div>
 
@@ -762,88 +730,130 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-12">
-                    <div class="get-in-touch">
-                        <h3>Get in Touch</h3>
-                        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p> -->
-                        <ul>
-                            <li><a href="#"><i class="icofont-facebook"></i></a></li>
-                            <li><a href="#"><i class="icofont-twitter"></i></a></li>
-                            <li><a href="#"><i class="icofont-linkedin"></i></a></li>
-                            <li><a href="#"><i class="icofont-instagram"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-lg-8 col-md-12">
-                    <form id="contactForm">
-                        <div class="row">
-                            <div class="col-lg-6 col-md-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" name="name" id="name" required data-error="Please enter your name" placeholder="Name">
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-6 col-md-6">
-                                <div class="form-group">
-                                    <input type="email" class="form-control" name="email" id="email" required data-error="Please enter your email" placeholder="Email">
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-12 col-md-12">
-                                <div class="form-group">
-                                    <textarea name="message" class="form-control" id="message" cols="30" rows="4" required data-error="Write your message" placeholder="Message"></textarea>
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-12 col-md-12">
-                                <button type="submit" class="btn">Send Message</button>
-                                <div id="msgSubmit" class="h3 text-center hidden"></div>
-                                <div class="clearfix"></div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
+                
     <!-- End Contact Area -->
 
     <!-- Start Footer Area -->
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-logo">
+                        <a href="index.html"><img src="assets/img/logo1 png.png" alt="logo"></a>
+                        
+                        <h6 style="font-size: medium;margin-top: 20px;font-weight: 500;">SWARN MARKET, OPP, SPORTS COLLEGE, KAPURTHALA ROAD, JALANDHAR</h6>
+                    </div>
+                </div>
+    
+                <div class="col-lg-9 col-md-6">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="footer-box">
+                                <h3>Services</h3>
+                                <ul>
+                                    <li><a href="special.html">Special Clinic</a></li>
+                                    <li><a href="healthpackage.html">Health Package</a></li>
+                                    <li><a href="gallery.html">Gallery</a></li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="col-lg-4 col-md-6">
+                            <div class="footer-box">
+                                <h3>About Us</h3>
+                                <ul>
+                                    <li><a href="aboutclinic.html">About Clinic</a></li>
+                                    <li><a href="aboutdoctor.html">About Doctor</a></li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="col-lg-4 col-md-6">
+                            <div class="footer-box">
+                                <h3>Contact Us</h3>
+                                <ul>
+                                    <h6>call us:</h6>
+                                    <li><a href="tel:92176-43274">92176-43274</a></li>
+                                    <li><a href="tel:98158-52811">98158-52811</a></li>
+                                    <li><a href="tel:0181-2250601">0181-2250601</a></li>
+                                    <h6>mail us:</h6>
+                                    <li><a href="mailto:support@modichestclinic.com">support@modichestclinic.com</a></li>
+                                    <!-- <li><a href="mailto:[email&#160;protected]">[email&#160;protected]</a></li> -->
+                                    <li><a href=" https://maps.app.goo.gl/13kndEVhozUmRj198 ">Map</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
     <footer class="footer-area bg-f9faff">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-6">
-                    <p>©2023 Designed by <a href="#" target="_blank">Optic & Co.</a></p>
+                    <p> <a href="https://www.instagram.com/optic_developer?igsh=aDZhdmJ6djMwbmZ0" target="_blank">©2023 Designed by Optic & Co.</a></p>
                 </div>
-
-                <div class="col-lg-6 col-md-6">
+    
+                <!-- <div class="col-lg-6 col-md-6">
                     <ul>
-                        <li><a href="#">Terms & Conditions</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="https://www.instagram.com/optic_developer?igsh=aDZhdmJ6djMwbmZ0">Terms & Conditions</a></li>
+                        <li><a href="https://www.instagram.com/optic_developer?igsh=aDZhdmJ6djMwbmZ0">Privacy Policy</a></li>
                     </ul>
-                </div>
+                </div> -->
             </div>
         </div>
     </footer>
     <!-- End Footer Area -->
 
-    <div class="go-top"><i class="icofont-stylish-up"></i></div>
-
     <!-- Link of JS files -->
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <!-- <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script> -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery-ui.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/jquery.magnific-popup.min.js"></script>
     <script src="assets/js/jquery.mixitup.min.js"></script>
-    <script src="assets/js/form-validator.min.js"></script>
-    <script src="assets/js/contact-form-script.js"></script>
+    <!-- <script src="assets/js/form-validator.min.js"></script>
+    <script src="assets/js/contact-form-script.js"></script> -->
     <script src="assets/js/main.js"></script>
+   <script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    const form = document.querySelector('form');
+    const Name = document.getElementById("name");
+    const email = document.getElementById("email");
+    const Phoneno = document.getElementById("phone");
+    const Bookingdate = document.getElementById("datepicker");
+    const Message = document.getElementById("message");
+    function sendEmail() {
+        const bodyMessage = `Name: ${Name.value}<br> Email: ${email.value}<br> Phoneno: ${phone.value}<br> Message: ${message.value}`;
+        Email.send({
+            Host: "smtp.elasticemail.com",
+            Username: "support@modichestclinic.com",
+            Password: "B16B9F5D97907B895DDFDB74512CF6638CF8",
+            To: 'support@modichestclinic.com',
+            From: 'support@modichestclinic.com',
+            Subject: "Appointment mail",
+            Body: bodyMessage
+        }).then(
+            message => alert(message)
+
+
+        );
+    }
+
+
+    form.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        sendEmail();
+        // console.log(Name, Email, Phoneno)
+    });
+</script>
+   
 </body>
 
 </html>
