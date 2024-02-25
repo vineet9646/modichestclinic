@@ -3,6 +3,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Nunito', sans-serif;
+    /* overflow: hidden; */
 }
 
 img {
@@ -75,8 +76,16 @@ button {
 .mt-30 {
     margin-top: 30px;
 }
-
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    /* or any other value that suits your needs */
+}
 .btn {
+    margin-top: 20px;
+    margin-bottom: 20px;
     position: relative;
     color: #fff;
     /* color: rgba(1, 100, 174, -3);; */
@@ -89,6 +98,13 @@ button {
     text-transform: uppercase;
     font-size: 14px;
 }
+/* .btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    /* or any other value that suits your needs */
+
 
 .btn::after {
     content: "";
@@ -668,8 +684,15 @@ fieldset:disabled .btn:hover {
 .about-image .col-lg-6:last-child .image img {
     border-radius: 0 0 25px 0;
 }
+
+
+
+
+
+
+
 /* about team */
-.teamcontainer{
+.teamcontainer {
     position: relative;
     height: 50%;
     /* width: 1300px; */
@@ -680,37 +703,98 @@ fieldset:disabled .btn:hover {
     padding: 20px;
     margin-top: 5px;
 }
-.teamcontainer .card{
-    width: 600px;
+
+
+
+.teamcontainer {
     position: relative;
-    height: 850px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-top: 5px;
+}
+
+.teamcontainer .card {
+    position: relative;
     background: #fff;
     margin: 30px 10px;
     padding: 20px 15px;
     display: flex;
     flex-direction: column;
-    /* box-shadow: 0.5px 10px #e6e6e6; */
     transition: 0.3s ease-in-out;
-    /* margin-top: 5%; */
 }
-.teamcontainer .card .imgbx{
- position: relative; 
- width: 530px;  
- height: 1380px;
- top: -15px;
- left: 20px;
- /* box-shadow: 0 5px 20px rgba(0, 0, 0, 1.2); */
-}
-.teamcontainer .card .imgbx img{
+
+.teamcontainer .card .imgbx {
+    position: relative;
     width: 100%;
-    height: 380px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.teamcontainer .card .imgbx img {
+    width: 100%;
+    height: auto;
     object-fit: contain;
-    /* max-width: 100px;
-    border-radius: 10px; */
 }
-.imgbx:hover img{
-    transform: scale(1.01);
+
+@media (min-width: 768px) {
+
+    /* Add styles for medium-sized screens (tablets, etc.) */
+    .teamcontainer {
+        justify-content: space-around;
+    }
+
+    .teamcontainer .card {
+        width: 45%;
+    }
+
+    .teamcontainer .card .imgbx {
+        width: 100%;
+    }
 }
+
+@media (min-width: 992px) {
+
+    /* Add styles for large screens (desktops, etc.) */
+    .teamcontainer .card {
+        width: 30%;
+    }
+}
+.clinic-info {
+    padding: 80px 0;
+    background-color: #f9faff;
+}
+
+.clinic-info h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.clinic-info p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.clinic-info img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+@media (max-width: 767px) {
+    .clinic-info .row {
+        flex-direction: column-reverse;
+    }
+}
+
+
+
+
+
+
 .why-choose-us .section-title {
     text-align: left;
     margin-bottom: 0;
@@ -1088,157 +1172,201 @@ fieldset:disabled .btn:hover {
     clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
 }
 
-.appointment-area {
-    position: relative;
+ .appointment-area {
+     position: relative;
+ }
+
+ .appointment-area::after,
+ .appointment-area::before {
+     content: "";
+     position: absolute;
+     right: 0;
+     top: 0;
+     width: 50%;
+     height: 600px;
+ }
+
+ .appointment-area::before {
+     background: linear-gradient(45deg, rgba(0, 117, 255, 0.55) 100%, transparent 100%);
+     z-index: 1;
+ }
+
+ .appointment-area::after {
+     background-image: url(../../assets/img/DIGITAL\ X\ RAY.jpg);
+     background-position: center center;
+     background-size: cover;
+     background-repeat: no-repeat;
+ }
+
+ .appointment-area .section-title {
+     text-align: left;
+     margin-bottom: 15px;
+     margin-top: 35px;
+ }
+
+ .appointment-area .section-title span {
+     position: relative;
+     padding-left: 30px;
+     margin-bottom: 25px;
+ }
+
+ .appointment-area .section-title span::before {
+     content: "";
+     position: absolute;
+     left: 0;
+     top: 12px;
+     height: 2px;
+     width: 20px;
+     background: #3b566e;
+ }
+
+ .faq {
+     padding-right: 20px;
+ }
+
+ .accordion {
+     list-style-type: none;
+     padding: 0;
+     margin: 0;
+ }
+
+ .accordion .accordion-item {
+     display: block;
+     margin-bottom: 10px;
+ }
+
+ .accordion .accordion-item:last-child {
+     margin-bottom: 0;
+ }
+
+ .accordion .accordion-title {
+     display: block;
+     color: #fff;
+     padding: 18px 20px;
+     background: #00c6ff;
+     background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
+     background: linear-gradient(to right, #0072ff, #00c6ff);
+     font-size: 18px;
+     position: relative;
+ }
+
+ .accordion .accordion-title i {
+     position: absolute;
+     top: 50%;
+     right: 12px;
+     margin-top: -5px;
+     font-size: 14px;
+ }
+
+ .accordion .accordion-title.active i::before {
+     content: "\ef9a";
+ }
+
+ .accordion .accordion-content {
+     display: none;
+     position: relative;
+     overflow: hidden;
+     padding: 15px;
+     background: #f9faff;
+ }
+
+ .accordion .accordion-content.show {
+     display: block;
+ }
+
+ .appointment-form {
+     position: relative;
+     z-index: 1;
+     padding-left: 20px;
+ }
+
+ .appointment-form form .form-group {
+     position: relative;
+     margin-bottom: 20px;
+ }
+
+ .appointment-form form .form-group span {
+     position: absolute;
+     right: 10px;
+     top: 50%;
+     margin-top: -10px;
+     color: #fff;
+     z-index: -1;
+ }
+
+ .appointment-form form .form-control {
+     color: #fff;
+     background-color: transparent;
+     border: 1px solid #fff;
+ }
+
+ .appointment-form form .form-control::placeholder {
+     color: #fff;
+ }
+
+ .appointment-form form .form-control option {
+     color: #92a5b8;
+ }
+
+ .appointment-form form .btn {
+     border: 1px solid #fff;
+     margin-top: 5px;
+     color: #0075ff;
+ }
+
+ .appointment-form form .btn:hover {
+     color: #fff;
+ }
+
+ .appointment-form form .btn::after {
+     background: #fff !important;
+ }
+.social-icons {
+    position: fixed;
+    right: 20px;
+    top: 300px;
+    /* bottom: 10px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1000;
 }
 
-.appointment-area::after,
-.appointment-area::before {
-    content: "";
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 50%;
-    height: 600px;
-}
-
-.appointment-area::before {
-    background: linear-gradient(45deg, rgba(0, 117, 255, 0.55) 100%, transparent 100%);
-    z-index: 1;
-}
-
-.appointment-area::after {
-    /* background-image: url(../../assets/img/appointment-bg.jpg); */
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.appointment-area .section-title {
-    text-align: left;
-    margin-bottom: 15px;
-    margin-top: 35px;
-}
-
-.appointment-area .section-title span {
-    position: relative;
-    padding-left: 30px;
-    margin-bottom: 25px;
-}
-
-.appointment-area .section-title span::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 12px;
-    height: 2px;
-    width: 20px;
-    background: #3b566e;
-}
-
-.faq {
-    padding-right: 20px;
-}
-
-.accordion {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.accordion .accordion-item {
-    display: block;
+.social-icons a {
+    width: 30px;
+    height: 30px;
+    /* background-color: rgba(0, 0, 0, 0.2); */
+   
+    background-color: #07529d;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 10px;
-}
-
-.accordion .accordion-item:last-child {
-    margin-bottom: 0;
-}
-
-.accordion .accordion-title {
-    display: block;
+    text-decoration: none;
     color: #fff;
-    padding: 18px 20px;
-    background: #00c6ff;
-    background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
-    background: linear-gradient(to right, #0072ff, #00c6ff);
-    font-size: 18px;
-    position: relative;
+    transition: background-color 0.3s ease;
 }
 
-.accordion .accordion-title i {
-    position: absolute;
-    top: 50%;
-    right: 12px;
-    margin-top: -5px;
-    font-size: 14px;
+
+.social-icons a:hover {
+    /* background-color: rgba(0, 0, 0, 0.4); */
+    background-color: #003366;
+    transform: scale(1.1);
+}
+body {
+    padding-bottom: 70px;
+    /* Add padding to the bottom of the body to prevent content from overlapping the icons */
 }
 
-.accordion .accordion-title.active i::before {
-    content: "\ef9a";
-}
 
-.accordion .accordion-content {
-    display: none;
-    position: relative;
-    overflow: hidden;
-    padding: 15px;
-    background: #f9faff;
-}
 
-.accordion .accordion-content.show {
-    display: block;
+.services-area {
+    padding-top: 100px;
+    /* Add some padding to the top of the Services section to make room for the social media icons */
 }
-
-.appointment-form {
-    position: relative;
-    z-index: 1;
-    padding-left: 20px;
-}
-
-.appointment-form form .form-group {
-    position: relative;
-    margin-bottom: 20px;
-}
-
-.appointment-form form .form-group span {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    margin-top: -10px;
-    color: #fff;
-    z-index: -1;
-}
-
-.appointment-form form .form-control {
-    color: #fff;
-    background-color: transparent;
-    border: 1px solid #fff;
-}
-
-.appointment-form form .form-control::placeholder {
-    color: #fff;
-}
-
-.appointment-form form .form-control option {
-    color: #92a5b8;
-}
-
-.appointment-form form .btn {
-    border: 1px solid #fff;
-    margin-top: 5px;
-    color: #0075ff;
-}
-
-.appointment-form form .btn:hover {
-    color: #fff;
-}
-
-.appointment-form form .btn::after {
-    background: #fff !important;
-}
-
 .single-services {
+    margin-top: 30px;
     box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.06);
     text-align: center;
     padding: 35px 20px;
@@ -1251,6 +1379,7 @@ fieldset:disabled .btn:hover {
     -webkit-transition: 0.3s;
     transition: 0.3s;
 }
+
 
 .single-services::before {
     content: "";
@@ -1278,16 +1407,14 @@ fieldset:disabled .btn:hover {
     border-radius: 0;
 }
 
+
 .single-services:hover::before {
     opacity: 1;
     visibility: visible;
     border-radius: 0;
 }
 
-.single-services i {
-    font-size: 40px;
-    color: #0075ff;
-}
+
 
 .single-services h3 {
     font-size: 20px;
@@ -1296,7 +1423,7 @@ fieldset:disabled .btn:hover {
 }
 
 .single-services h3,
-.single-services i,
+.single-services img,
 .single-services p {
     position: relative;
     -moz-transition: 0.3s;
@@ -1307,23 +1434,14 @@ fieldset:disabled .btn:hover {
 }
 
 .single-services:hover h3,
-.single-services:hover i,
+.single-services:hover img,
 .single-services:hover p {
     color: #fff;
 }
 
 .single-services a {
     border: 1px solid red;
-    /* width: 40%;
-    height: 40px;
-    line-height: 40px;
-    margin-top: 25px;
-    font-size: 16px;
-    border-radius: 30%;
-    color: #fff;
-    position: relative;
-    z-index: 1;
-    text-align: center; */
+
 
     position: relative;
         color: #fff;
@@ -1341,6 +1459,7 @@ fieldset:disabled .btn:hover {
     color: #0075ff;
     background: #fff;
 }
+
 .single-services a::after {
     /* content: "";
     position: absolute;
@@ -1548,6 +1667,7 @@ fieldset:disabled .btn:hover {
     transform: scale(1);
 }
 
+
 .single-photo {
     position: relative;
     margin-bottom: 30px;
@@ -1562,9 +1682,9 @@ fieldset:disabled .btn:hover {
     top: 0;
     width: 90%;
     height: 100%;
-    background: #00c6ff;
-    background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
-    background: linear-gradient(to right, #0072ff, #00c6ff);
+    /* background: #00c6ff; */
+    /* background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
+    background: linear-gradient(to right, #0072ff, #00c6ff); */
     opacity: 0;
     visibility: hidden;
     -moz-transition: all 0.3s ease 0s;
@@ -1636,8 +1756,8 @@ fieldset:disabled .btn:hover {
 }
 
 .single-photo:hover .gallery-content .popup-btn {
-    bottom: 15px;
-    right: 15px;
+    bottom: 150px;
+    right: 200px;
 }
 
 .single-photo img {
@@ -1910,6 +2030,7 @@ fieldset:disabled .btn:hover {
     background: #fff;
     text-align: center;
     padding: 30px 20px;
+   
     position: relative;
     z-index: 1;
     border-radius: 15px 5px 5px 5px;
@@ -1963,7 +2084,7 @@ fieldset:disabled .btn:hover {
 }
 
 .contact-box ul {
-    padding: 0;
+    padding: 12px;
     margin: 0;
     list-style-type: none;
     text-align: left;
@@ -2298,12 +2419,13 @@ fieldset:disabled .btn:hover {
     margin-top: 25px;
 }
 
-.footer-area {
-    padding: 30px 0;
+ .footer-area {
+    padding: 1px 0;
 }
 
 .footer-area p {
     font-size: 15px;
+    text-align: center;
 }
 
 .footer-area ul {
@@ -2316,7 +2438,7 @@ fieldset:disabled .btn:hover {
 .footer-area ul li {
     display: inline-block;
     position: relative;
-    padding-left: 20px;
+    padding-left: 00px;
 }
 
 .footer-area ul li::before {
@@ -2333,6 +2455,65 @@ fieldset:disabled .btn:hover {
     display: none;
 }
 
+.footer {
+    background-color: #f9faff;
+    padding: 50px 0;
+}
+
+.footer-logo {
+    margin-bottom: 30px;
+}
+
+.footer-box {
+    margin-bottom: 30px;
+}
+
+.footer-box h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.footer-box ul {
+    list-style: none;
+}
+
+.footer-box li {
+    margin-bottom: 10px;
+}
+
+.footer-box li a {
+    color: #333;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.footer-box li a:hover {
+    color: #f05454;
+}
+
+
+ 
+.footer {
+    background-color: #fff;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.footer-logo {
+    text-align: center;
+    margin-bottom: 1px;
+}
+
+.footer-box {
+    margin-bottom: -20px;
+}
+
+.footer-box h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
 .go-top {
     position: fixed;
     cursor: pointer;
@@ -2361,3 +2542,32 @@ fieldset:disabled .btn:hover {
 textarea.form-control {
     min-height: 125px;
 }
+/* .teamcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card{
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    max-width: 350px;
+    width: 100%;
+}
+.imgbx{
+    position: relative;
+}
+.imgbx img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.imgbx h2{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+@media screen and (max-width:768px) {
+    .card{
+        padding: 15px;
+    }
+} */
