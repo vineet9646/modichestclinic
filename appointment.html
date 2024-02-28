@@ -566,7 +566,7 @@
                     const Bookingdate = document.getElementById("datepicker");
                     const Message = document.getElementById("message");
                     function sendEmail() {
-                        const bodyMessage = `Name: ${Name.value}<br> Email: ${email.value}<br> Phoneno: ${phone.value}<br> Message: ${message.value}` ;
+                        const bodyMessage = `Name: ${Name.value}<br> Email: ${email.value}<br> Phoneno: ${phone.value}<br> Booking Date: ${datepicker.value}<br> Message: ${message.value}` ;
                         Email.send({
                             Host: "smtp.elasticemail.com",
                             Username: "support@modichestclinic.com",
