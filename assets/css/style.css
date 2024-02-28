@@ -807,7 +807,7 @@ fieldset:disabled .btn:hover {
 }
 
 .why-choose-us .section-title span::before {
-    content: "";
+/*     content: ""; */
     position: absolute;
     left: 0;
     top: 12px;
