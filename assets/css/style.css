@@ -65,7 +65,7 @@ a {
 }
 
 a:hover {
-    color: #007aff;
+    color:#07529d;
     text-decoration: none;
 }
 
@@ -114,8 +114,9 @@ button {
     bottom: auto;
     background: rgba(1, 100, 174, -3);
     /* background: #00c6ff; */
-    background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
-    background: linear-gradient(to right, #0072ff, #00c6ff);
+    background-color: #07529d;
+    /* background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
+    background: linear-gradient(to right, #0072ff, #00c6ff); */
     top: 0;
     left: 0;
     width: 100%;
@@ -132,15 +133,15 @@ button {
 }
 
 .btn:hover {
-    color: #007aff;
-    border-color: #007aff;
+    color: #07529d;
+    border-color: #07529d;
 }
 
 .btn.focus,
 .btn:focus {
     box-shadow: unset;
-    color: #007aff;
-    border-color: #007aff;
+    color: #07529d;
+    border-color: #07529d;
 }
 
 .btn.disabled,
@@ -152,8 +153,8 @@ button {
 .btn:disabled,
 fieldset:disabled .btn {
     color: #fff;
-    background-color: #007aff;
-    border-color: #007aff;
+    background-color: #07529d;
+    border-color: #07529d;
 }
 
 .btn.disabled:hover,
@@ -195,9 +196,10 @@ fieldset:disabled .btn:hover {
     width: 0;
     height: 100%;
     border-radius: 3px;
-    background: #00c6ff;
-    background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
-    background: linear-gradient(to right, #0072ff, #00c6ff);
+    border-color: #07529d;
+    border-color: #07529d;
+    /* background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
+    background: linear-gradient(to right, #0072ff, #00c6ff); */
     opacity: 0;
     visibility: hidden;
     -moz-transition: 0.3s;
@@ -215,7 +217,7 @@ fieldset:disabled .btn:hover {
 
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
-    background: #007aff;
+    background: #07529d;
 }
 
 .owl-theme .owl-dots .owl-dot span:hover::before {
@@ -325,7 +327,7 @@ fieldset:disabled .btn:hover {
 
 .section-title span {
     display: inline-block;
-    color: #0f73bb;
+    color: #07529d;
     font-size: 18px;
     margin-bottom: 18px;
 }
@@ -357,7 +359,7 @@ fieldset:disabled .btn:hover {
 }
 
 .preloader-area .spinner>div {
-    background-color: #007aff;
+    background-color: #07529d;
     height: 100%;
     width: 6px;
     display: inline-block;
@@ -447,27 +449,27 @@ fieldset:disabled .btn:hover {
 
 .navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav li a:hover {
-    color: #007aff !important;
+    color: #07529d !important;
 }
 
 .navbar-light .navbar-nav .active>a,
 .navbar-light .navbar-nav .show>a,
 .navbar-light .navbar-nav a.active,
 .navbar-light .navbar-nav a.show {
-    color: #007aff !important;
+    color: #07529d !important;
 }
 
 .appointment-btn {
     font-size: 14px;
     font-weight: 600;
-    color: #0075ff;
-    border: 1px solid #0075ff;
+    color: #07529d;
+    border: 1px solid #07529d;
     padding: 8px 30px;
     border-radius: 30px;
 }
 
 .appointment-btn:hover {
-    background: #0075ff;
+    background: #07529d;
     color: #fff;
 }
 
@@ -477,12 +479,12 @@ fieldset:disabled .btn:hover {
 }
 
 .appointment-btn.white-btn:hover {
-    border-color: #0075ff;
+    border-color: #07529d;
 }
 
 .navbar.is-sticky .appointment-btn.white-btn {
-    color: #0075ff;
-    border-color: #0075ff;
+    color: #07529d;
+    border-color: #07529d;
 }
 
 .navbar.is-sticky .appointment-btn.white-btn:hover {
@@ -535,7 +537,7 @@ fieldset:disabled .btn:hover {
 }
 
 .hero-content h1 span {
-    color: #0078ff;
+    color: #07529d;
 }
 
 .hero-content p {
@@ -562,9 +564,10 @@ fieldset:disabled .btn:hover {
     top: 0;
     width: 100%;
     height: 100%;
-    background: #00c6ff;
-    background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
-    background: linear-gradient(to right, #0072ff, #00c6ff);
+    background: #07529d;
+
+    /* background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
+    background: linear-gradient(to right, #0072ff, #00c6ff); */
     opacity: 0.77;
     z-index: -1;
 }
@@ -613,9 +616,9 @@ fieldset:disabled .btn:hover {
     top: 0;
     width: 100%;
     height: 50%;
-    background: #00c6ff;
-    background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
-    background: linear-gradient(to right, #0072ff, #00c6ff);
+    background: #07529d;
+    /* background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
+    background: linear-gradient(to right, #0072ff, #00c6ff); */
     opacity: 0;
     visibility: hidden;
     border-radius: 5px 30px 5px 5px;
@@ -639,7 +642,7 @@ fieldset:disabled .btn:hover {
 
 .single-box i {
     font-size: 40px;
-    color: #0075ff;
+    color: #07529d;
 }
 
 .single-box h3 {
@@ -807,7 +810,7 @@ fieldset:disabled .btn:hover {
 }
 
 .why-choose-us .section-title span::before {
-/*     content: ""; */
+    /* content: ""; */
     position: absolute;
     left: 0;
     top: 12px;
@@ -846,9 +849,9 @@ fieldset:disabled .btn:hover {
     top: 3px;
     width: 15px;
     height: 15px;
-    background: #00c6ff;
-    background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
-    background: linear-gradient(to right, #0072ff, #00c6ff);
+    background: #07529d;
+    /* background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
+    background: linear-gradient(to right, #0072ff, #00c6ff); */
     -webkit-clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
     clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
 }
@@ -1057,7 +1060,7 @@ fieldset:disabled .btn:hover {
 }
 
 .tabs li a i {
-    color: #0075ff;
+    color: #07529d;
     font-size: 40px;
     margin-bottom: 15px;
     display: inline-block;
@@ -1081,9 +1084,9 @@ fieldset:disabled .btn:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #00c6ff;
-    background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
-    background: linear-gradient(to right, #0072ff, #00c6ff);
+    background: #07529d;
+    /* background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
+    background: linear-gradient(to right, #0072ff, #00c6ff); */
     z-index: -1;
     opacity: 0;
     border-radius: 3px;
@@ -1165,9 +1168,9 @@ fieldset:disabled .btn:hover {
     top: 3px;
     width: 15px;
     height: 15px;
-    background: #00c6ff;
-    background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
-    background: linear-gradient(to right, #0072ff, #00c6ff);
+    background: #07529d;
+    /* background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
+    background: linear-gradient(to right, #0072ff, #00c6ff); */
     -webkit-clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
     clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
 }
@@ -1311,7 +1314,7 @@ fieldset:disabled .btn:hover {
  .appointment-form form .btn {
      border: 1px solid #fff;
      margin-top: 5px;
-     color: #0075ff;
+     color: #07529d;
  }
 
  .appointment-form form .btn:hover {
@@ -1355,18 +1358,17 @@ fieldset:disabled .btn:hover {
     transform: scale(1.1);
 }
 body {
-    padding-bottom: 70px;
+    padding-bottom: 0px;
     /* Add padding to the bottom of the body to prevent content from overlapping the icons */
 }
 
 
-
 .services-area {
-    padding-top: 100px;
+    padding-top: 1px;
     /* Add some padding to the top of the Services section to make room for the social media icons */
 }
 .single-services {
-    margin-top: 30px;
+    margin-top: 0px;
     box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.06);
     text-align: center;
     padding: 35px 20px;
@@ -1388,10 +1390,10 @@ body {
     top: 0;
     width: 100%;
     height: 100%;
-    background: #00c6ff;
+    background: #07529d;
     border-radius: 30px 5px 5px 5px;
-    background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
-    background: linear-gradient(to right, #0072ff, #00c6ff);
+    /* background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
+    background: linear-gradient(to right, #0072ff, #00c6ff); */
     opacity: 0;
     visibility: hidden;
     -moz-transition: all 0.3s ease 0s;
@@ -1456,7 +1458,7 @@ body {
 }
 
 .single-services:hover a {
-    color: #0075ff;
+    color: #07529d;
     background: #fff;
 }
 
@@ -1484,9 +1486,9 @@ body {
         z-index: -1;
         bottom: auto;
         /* background: rgba(1, 100, 184, 3); */
-        background: #00c6ff;
-        background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
-        background: linear-gradient(to right, #0072ff, #00c6ff);
+        background: #07529d;
+        /* background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
+        background: linear-gradient(to right, #0072ff, #00c6ff); */
         top: 0;
         left: 0;
         width: 100%;
@@ -1519,9 +1521,9 @@ body {
     top: 0;
     width: 100%;
     height: 100%;
-    background: #00c6ff;
-    background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
-    background: linear-gradient(to right, #0072ff, #00c6ff);
+    background: #07529d;
+    /* background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
+    background: linear-gradient(to right, #0072ff, #00c6ff); */
     opacity: 0.8;
     z-index: -1;
 }
@@ -1646,9 +1648,9 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #00c6ff;
-    background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
-    background: linear-gradient(to right, #0072ff, #00c6ff);
+    background: #07529d;
+    /* background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
+    background: linear-gradient(to right, #0072ff, #00c6ff); */
     z-index: -1;
     opacity: 0;
     -webkit-transform: scale(0.9);
@@ -1797,10 +1799,10 @@ body {
     top: 0;
     width: 100%;
     height: 100%;
-    background: #00c6ff;
+    background: #07529d;
     border-radius: 5px 5px 0 0;
-    background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
-    background: linear-gradient(to right, #0072ff, #00c6ff);
+    /* background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
+    background: linear-gradient(to right, #0072ff, #00c6ff); */
     opacity: 0;
     visibility: hidden;
     z-index: -1;
@@ -1835,7 +1837,7 @@ body {
 }
 
 .pricing-table .price span {
-    color: #0078ff;
+    color: #07529d;
     font-size: 34px;
     font-weight: 700;
 }
@@ -1889,9 +1891,9 @@ body {
     width: 100%;
     border-radius: 5px;
     height: 100%;
-    background: #00c6ff;
-    background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
-    background: linear-gradient(to right, #0072ff, #00c6ff);
+    background: #07529d;
+    /* background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
+    background: linear-gradient(to right, #0072ff, #00c6ff); */
     opacity: 0;
     visibility: hidden;
     z-index: -1;
@@ -2018,7 +2020,7 @@ body {
 }
 
 .single-blog-post .post-content h4 a:hover {
-    color: #007aff;
+    color: #07529d;
 }
 
 .single-blog-post .post-content p {
@@ -2055,9 +2057,9 @@ body {
     width: 100%;
     height: 100%;
     border-radius: 15px 5px 5px 5px;
-    background: #00c6ff;
-    background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
-    background: linear-gradient(to right, #0072ff, #00c6ff);
+    background: #07529d;
+    /* background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
+    background: linear-gradient(to right, #0072ff, #00c6ff); */
     opacity: 0;
     visibility: hidden;
     z-index: -1;
@@ -2079,7 +2081,7 @@ body {
 }
 
 .contact-box h3 i {
-    color: #0075ff;
+    color: #07529d;
     margin-right: 5px;
 }
 
@@ -2144,7 +2146,7 @@ body {
 }
 
 .get-in-touch ul li a:hover {
-    color: #0075ff;
+    color: #07529d;
 }
 
 #contactForm .btn:focus,
@@ -2182,9 +2184,9 @@ body {
     top: 0;
     width: 100%;
     height: 100%;
-    background: #00c6ff;
-    background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
-    background: linear-gradient(to right, #0072ff, #00c6ff);
+    background: #07529d;
+    /* background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
+    background: linear-gradient(to right, #0072ff, #00c6ff); */
     opacity: 0.8;
 }
 
@@ -2220,13 +2222,13 @@ body {
 
 .page-item.active .page-link {
     color: #fff;
-    background-color: #0075ff;
+    background-color: #07529d;
 }
 
 .page-link:focus,
 .page-link:hover {
     color: #fff;
-    background-color: #0075ff;
+    background-color: #07529d;
 }
 
 .page-link:focus {
@@ -2247,7 +2249,7 @@ body {
     left: 0;
     bottom: 0;
     text-transform: uppercase;
-    background: #0075ff;
+    background: #07529d;
     color: #fff;
     padding: 10px 20px;
     font-size: 22px;
@@ -2277,7 +2279,7 @@ body {
 }
 
 .blog-details-heading ul li i {
-    color: #0075ff;
+    color: #07529d;
 }
 
 .blog-details-content p {
@@ -2286,7 +2288,7 @@ body {
 
 .blog-details-content .blockquote {
     margin: 25px 0;
-    background: #0075ff;
+    background: #07529d;
     padding: 25px;
     color: #fff;
 }
@@ -2342,9 +2344,9 @@ body {
 }
 
 .blog-details-meta .tags li a:hover {
-    background: #0075ff;
+    background: #07529d;
     color: #fff;
-    border-color: #0075ff;
+    border-color: #07529d;
 }
 
 .blog-details-meta .share {
@@ -2363,9 +2365,9 @@ body {
 }
 
 .blog-details-meta .share li a:hover {
-    background: #0075ff;
+    background: #07529d;
     color: #fff;
-    border-color: #0075ff;
+    border-color: #07529d;
 }
 
 .blog-details-content .title {
@@ -2472,10 +2474,12 @@ body {
     font-size: 18px;
     font-weight: 500;
     margin-bottom: 15px;
+    margin-top: 30px;
 }
 
 .footer-box ul {
     list-style: none;
+    margin-top: 10px;
 }
 
 .footer-box li {
@@ -2489,7 +2493,7 @@ body {
 }
 
 .footer-box li a:hover {
-    color: #f05454;
+    color: #003366;
 }
 
 
@@ -2514,10 +2518,10 @@ body {
     font-weight: bold;
     margin-bottom: 10px;
 }
-.go-top {
+/* .go-top {
     position: fixed;
     cursor: pointer;
-    bottom: 30px;
+    bottom: 200px;
     right: 20px;
     font-size: 25px;
     color: #fff;
@@ -2532,42 +2536,13 @@ body {
     -moz-transition: 0.4s;
     -webkit-transition: 0.4s;
     transition: 0.4s;
-}
+} */
 
 .go-top:hover {
     color: #fff;
-    background: #007aff;
+    background: #07529d;
 }
 
 textarea.form-control {
     min-height: 125px;
 }
-/* .teamcontainer{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.card{
-    border-radius: 5px;
-    margin: 20px;
-    padding: 20px;
-    max-width: 350px;
-    width: 100%;
-}
-.imgbx{
-    position: relative;
-}
-.imgbx img{
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-.imgbx h2{
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-@media screen and (max-width:768px) {
-    .card{
-        padding: 15px;
-    }
-} */
