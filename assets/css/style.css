@@ -421,7 +421,7 @@ fieldset:disabled .btn:hover {
     padding: 15px 0;
 }
 
-.navbar-light.is-sticky {
+/* .navbar-light.is-sticky {
     position: fixed;
     top: 0;
     left: 0;
@@ -431,13 +431,13 @@ fieldset:disabled .btn:hover {
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
     -webkit-animation: 0.5s ease-in-out 0s normal none 1 running fadeInDown;
     animation: 0.5s ease-in-out 0s normal none 1 running fadeInDown;
-}
+} */
 
 .navbar .row {
     width: 100%;
 }
 
-.navbar-light.navbar-expand-lg .navbar-nav li {
+/* .navbar-light.navbar-expand-lg .navbar-nav li {
     padding: 10px 12px;
 }
 
@@ -499,7 +499,7 @@ fieldset:disabled .btn:hover {
 .navbar.navbar-two.is-sticky {
     position: fixed;
 }
-
+ */
 .main-banner {
     height: 730px;
     background-image: url(../../assets/img/first\ sliderr.jpg);
@@ -2538,11 +2538,11 @@ body {
     transition: 0.4s;
 } */
 
-.go-top:hover {
+/* .go-top:hover {
     color: #fff;
     background: #07529d;
 }
-
+ */
 textarea.form-control {
     min-height: 125px;
 }
