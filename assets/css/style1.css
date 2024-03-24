@@ -1,0 +1,120 @@
+/* Online Consultancy Section */
+
+/* /* Online Consultancy Section */
+.online-consultancy {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.consultancy-box {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 100px;
+    position: relative;
+    /* Added for the perspective effect */
+}
+
+.consultancy-box h3 {
+    font-size: 18px;
+    margin-top: 40px;
+    transition: all 0.3s ease;
+        display: block;
+        text-decoration: none;
+        /* Ensure no underlines */
+        padding: 20px 40px;
+        /* Increase padding for better click/touch target */
+        border-radius: 10px;
+        /* Add border radius for rounded corners */
+        background-color: #fff;
+        /* Add background color */
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+        /* Add box shadow for 3D effect */
+        transform: perspective(1000px) rotateX(0deg);
+        /* Initial 3D rotation */
+}
+
+.consultancy-box a {
+    font-size: 100px;
+    color: #333;
+    transition: all 0.3s ease;
+    display: block;
+    text-decoration: none;
+    /* Ensure no underlines */
+    padding: 20px 40px;
+    /* Increase padding for better click/touch target */
+    border-radius: 10px;
+    /* Add border radius for rounded corners */
+    background-color: #fff;
+    /* Add background color */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    /* Add box shadow for 3D effect */
+    transform: perspective(1000px) rotateX(0deg);
+    /* Initial 3D rotation */
+}
+
+.consultancy-box a:hover {
+    color: #07529d;
+    transform: perspective(1000px) rotateX(10deg);
+    /* Apply rotation on hover */
+}
+
+.appointment-form {
+
+    background-image: linear-gradient(rgba(241, 241, 241, 0.5), rgba(232, 223, 223, 0.5)), url(../../assets/img/DIGITAL\ X\ RAY.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.appointment-form h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #07529d;
+        /* Darker color for h2 */
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+        font-weight: bold;
+}
+
+.appointment-form input,
+.appointment-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background:  rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.appointment-form input::placeholder,
+.appointment-form textarea::placeholder {
+    color: #999;
+    /* Placeholder text color */
+    background: transparent;
+
+    /* Background color for placeholder */
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.appointment-form button {
+    width: 50%;
+    padding: 10px;
+    margin: auto;
+    display: block;
+    background-color: #07529d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    transform: scale(0.9);
+}
+
+.appointment-form button:hover {
+    /* background-color: #07529d; */
+    background-color: #054281;
+    transform: scale(1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
